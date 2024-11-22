@@ -1,0 +1,12 @@
+<p>Ingreso a la aplicación</p>
+<form [formGroup]="loginForm">
+<p>
+<label>Usuario: <input type = "text" formControlName = "username" /></label>
+</p>
+<p>
+<label>Clave: <input type = "password" formControlName ="password" /></label>
+</p>
+
+<p><input type = "submit" value = "Ingresar" /></p>
+</form>
+<p><button type="button" (click)="llamarServicio()">Reuniones</button></p>
