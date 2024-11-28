@@ -9,10 +9,16 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./reunion.component.css'],
 })
 export class ReunionComponent implements OnInit {
-  constructor(private service: ReunionService ){ }
-  ngOnInit(): void { }
-  getReuniones(){
-    this.service.getReuniones();
+  service: ReunionService;
+
+  constructor(){
+    this.service = new ReunionService();
   }
- 
+  ngOnInit(): void {
+    
+  }
+  
+  getOtroValor(){
+    this.service.funcionalidad1();
+  }
 }

@@ -1,5 +1,3 @@
-import { Time } from "@angular/common";
-
 export class Reunion {
     private nombre: string = "";
     private fecha: Date = new Date();
